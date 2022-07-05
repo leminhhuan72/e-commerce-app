@@ -2,17 +2,17 @@ package com.example.e_commerce_app.models;
 
 import java.io.Serializable;
 
-public class PopularProductsModel implements Serializable {
+public class ShowAllModel implements Serializable {
     String description;
     String name;
     String rating;
     int price;
     String img_url;
 
-    public PopularProductsModel() {
+    public ShowAllModel() {
     }
 
-    public PopularProductsModel(String description, String name, String rating, int price, String img_url) {
+    public ShowAllModel(String description, String name, String rating, int price, String img_url) {
         this.description = description;
         this.name = name;
         this.rating = rating;

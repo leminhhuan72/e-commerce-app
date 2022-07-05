@@ -4,15 +4,24 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/drawable/edit_text_bg.xml" value="0.141" />
+        <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/activity_add_address.xml" value="0.25" />
+        <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/activity_address.xml" value="0.25" />
+        <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/activity_cart.xml" value="0.25" />
+        <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/activity_detailed.xml" value="0.25" />
         <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
         <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/activity_on_boarding.xml" value="0.10989583333333333" />
         <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/activity_registration.xml" value="0.25" />
+        <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/activity_show_all.xml" value="0.25" />
+        <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/address_item.xml" value="0.25" />
         <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/category_list.xml" value="0.25" />
         <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/my_cart_item.xml" value="0.25" />
         <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/new_products.xml" value="0.8" />
         <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/popular_items.xml" value="0.10989583333333333" />
+        <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/show_all_item.xml" value="0.25" />
         <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/layout/sliding_layout.xml" value="0.10989583333333333" />
+        <entry key="..\:/CS_material/Sophomore/3rd semester/e-commerce-app/app/src/main/res/menu/main_menu.xml" value="0.25" />
       </map>
     </option>
   </component>
