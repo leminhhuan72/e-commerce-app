@@ -81,7 +81,7 @@ public class ShowAllActivity extends AppCompatActivity {
 
         }
         //women
-        if(type != null && type.equalsIgnoreCase("women")){
+        if(type != null && type.equalsIgnoreCase("woman")){
             firestore.collection("ShowAll").whereEqualTo("type","women")
                     .get()
                     .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -100,7 +100,7 @@ public class ShowAllActivity extends AppCompatActivity {
         }
         //kids
         if(type != null && type.equalsIgnoreCase("kids")){
-            firestore.collection("ShowAll").whereEqualTo("type","kids")
+            firestore.collection("ShowAll").whereEqualTo("type","kid")
                     .get()
                     .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                         @Override
@@ -116,7 +116,7 @@ public class ShowAllActivity extends AppCompatActivity {
                     });
 
         }
-        if(type != null && type.equalsIgnoreCase("shoe")){
+        if(type != null && type.equalsIgnoreCase("shoes")){
             firestore.collection("ShowAll").whereEqualTo("type","shoe")
                     .get()
                     .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -151,7 +151,7 @@ public class ShowAllActivity extends AppCompatActivity {
 
         }
         if(type != null && type.equalsIgnoreCase("camera")){
-            firestore.collection("ShowAll").whereEqualTo("type","Camera")
+            firestore.collection("ShowAll").whereEqualTo("type","camera")
                     .get()
                     .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                         @Override

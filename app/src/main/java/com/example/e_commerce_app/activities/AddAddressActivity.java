@@ -32,6 +32,9 @@ public class AddAddressActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_address);
 
+        firestore = FirebaseFirestore.getInstance();
+        auth = FirebaseAuth.getInstance();
+
         toolbar = findViewById(R.id.add_address_toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -82,7 +85,7 @@ public class AddAddressActivity extends AppCompatActivity {
                                     if(task.isSuccessful()){
 
                                         Toast.makeText(AddAddressActivity.this, "Address Added", Toast.LENGTH_SHORT).show();
-                                        startActivity(new Intent(AddAddressActivity.this,DetailedActivity.class));
+                                        startActivity(new Intent(AddAddressActivity.this,AddressActivity.class));
                                         finish();
                                     }
                                 }

@@ -44,7 +44,7 @@ public class AddressActivity extends AppCompatActivity implements AddressAdapter
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_address);
 
-        toolbar = findViewById(R.id.add_address_toolbar);
+        toolbar = findViewById(R.id.address_toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
