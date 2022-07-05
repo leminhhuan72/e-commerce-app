@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.example.e_commerce_app.R;
@@ -23,6 +24,13 @@ public class PaymentActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View v) {
+                finish();
+            }
+        });
 
         subTotal = findViewById(R.id.sub_total);
         discount = findViewById(R.id.textView17);
