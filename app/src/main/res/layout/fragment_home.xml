@@ -156,6 +156,7 @@
                     android:textColor="@color/pink"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+
             </RelativeLayout>
 
             <androidx.recyclerview.widget.RecyclerView
@@ -166,7 +167,44 @@
                 android:layout_margin="7dp"
                 android:layout_marginTop="6dp"
                 android:padding="5dp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/list_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See locations of our stores"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="9dp"
+                    android:fontFamily="@font/amethysta"
+                    android:textSize="21sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/list_store"
+                    android:layout_marginLeft="9dp"
+                    android:text="We have a lot of stores located at HCM city"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amethysta"
+                    android:textSize="13sp"/>
+
+                <Button
+                    android:layout_marginRight="9dp"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/list_store_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Map"
+                    />
+            </RelativeLayout>
+
+
+
+
         </LinearLayout>
+
 
     </LinearLayout>
 

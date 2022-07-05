@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -25,6 +26,7 @@ import android.widget.Toast;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.e_commerce_app.R;
+import com.example.e_commerce_app.activities.MapsActivity;
 import com.example.e_commerce_app.activities.ShowAllActivity;
 import com.example.e_commerce_app.adapters.CategoryAdapter;
 import com.example.e_commerce_app.adapters.NewProductsAdapter;
@@ -63,6 +65,9 @@ public class HomeFragment extends Fragment {
     PopularProductsAdapter popularProductsAdapter;
     List<PopularProductsModel> popularProductsModelList;
     FirebaseFirestore db ;
+
+    //map
+    Button mapBtn;
     public HomeFragment(){
 
     }
@@ -81,6 +86,10 @@ public class HomeFragment extends Fragment {
         catShowAll = root.findViewById(R.id.category_see_all);
         popularShowAll = root.findViewById(R.id.popular_see_all);
         newProductShowAll = root.findViewById(R.id.newProducts_see_all);
+
+        mapBtn = root.findViewById(R.id.list_store_btn);
+
+
 
         catShowAll.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,6 +113,13 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        mapBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MapsActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         linearLayout = root.findViewById(R.id.home_layout);

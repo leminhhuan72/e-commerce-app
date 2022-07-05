@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.example.e_commerce_app.R;
 import com.example.e_commerce_app.adapters.ShowAllAdapter;
@@ -36,7 +37,6 @@ public class ShowAllActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         String type =  getIntent().getStringExtra("type");
-
         firestore = FirebaseFirestore.getInstance();
 
         recyclerView = findViewById(R.id.show_all_rec);
@@ -53,6 +53,7 @@ public class ShowAllActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<QuerySnapshot> task) {
                             if(task.isSuccessful()){
+                                Log.d("number of loaded doc", "onComplete: "+String.valueOf(task.getResult().size()));
                                 for(DocumentSnapshot doc : task.getResult().getDocuments()){
                                     ShowAllModel showAllModel = doc.toObject(ShowAllModel.class);
                                     showAllModelList.add(showAllModel);
